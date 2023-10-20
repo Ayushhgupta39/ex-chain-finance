@@ -1,4 +1,4 @@
-import { LiFiWidget } from "@lifi/widget"
+import { LiFiWidget } from "@lifi/widget";
 
 export const Widget = () => {
   return (
@@ -6,10 +6,10 @@ export const Widget = () => {
       config={{
         containerStyle: {
           border: `1px solid rgb(234, 234, 234)`,
-          borderRadius: "16px"
-        }
+          borderRadius: "16px",
+        },
       }}
-      integrator="nextjs-example"
+      integrator="ex-chain"
     />
-  )
-}
+  );
+};

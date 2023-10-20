@@ -1,29 +1,18 @@
 "use client";
 
+import { LoadingIndicator } from "@/components/widget/LoadingIndicator";
 import dynamic from "next/dynamic";
 
-const LiFiWidgetDynamic = dynamic(
-  () => import("@lifi/widget").then((module) => module.LiFiWidget),
+export const LiFiWidgetNext = dynamic(
+  () => import("../components/widget/Widget").then((module) => module.Widget),
   {
     ssr: false,
-    loading: () => "Loading...",
+    loading: () => <LoadingIndicator />,
   }
 );
 
 const Home = () => {
-  return (
-    <div className="flex min-h-screen justify-center items-center">
-      <LiFiWidgetDynamic
-        config={{
-          containerStyle: {
-            border: `1px solid rgb(234, 234, 234)`,
-            borderRadius: "16px",
-          },
-        }}
-        integrator="ex-chain"
-      />
-    </div>
-  );
+  return <LiFiWidgetNext />;
 };
 
 export default Home;
