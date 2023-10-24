@@ -25,7 +25,6 @@ export const Widget = () => {
         subvariant: "split"
       }}
       integrator="exchain"
-      fee={0.05}
     />
   );
 };
