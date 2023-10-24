@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.11.0",
     "@lifi/widget": "^2.5.1",
     "next": "13.4.6",
     "react": "^18",

@@ -22,7 +22,8 @@ export const Widget = () => {
         },
         appearance: 'dark',
         variant: "expandable",
-        subvariant: "split"
+        subvariant: "split",
+        hiddenUI: ['appearance'],
       }}
       integrator="exchain"
     />
