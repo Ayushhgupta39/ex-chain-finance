@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -18,12 +18,23 @@
   }
 }
 
-/* body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-} */
+nav {
+  filter: blur("8px");
+  -webkit-filter: blur("8px");
+  background: #010101;
+  background: radial-gradient(at center, #181717, #1a1d20);
+  box-shadow: rgba(50, 93, 62, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 64, 41, 0.35) 0px -2px 6px 0px inset;
+}
+
+.swap-background {
+  background: rgb(65, 61, 62);
+  background: radial-gradient(
+    circle,
+    rgb(61, 65, 62) 0%,
+    rgba(0, 3, 6, 1) 100%
+  );
+  filter: blur("40px"); 
+  -webkit-filter: blur("40px");
+}

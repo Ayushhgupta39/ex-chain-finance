@@ -4,20 +4,20 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <nav className="w-full shadow-xl flex justify-between p-2 items-center font-montserrat">
+    <nav className="w-full text-white flex justify-between p-2 items-center">
       <Image
-        src={"/assets/images/logo.png"}
-        height={120}
-        width={120}
+        src={"/assets/images/logo_black.png"}
+        height={125}
+        width={125}
         alt="logo"
-        className="cursor-pointer"
+        className="cursor-pointer mx-2"
       />
       <div>
-        <div className="hidden md:flex font-medium">
+        <div className="hidden md:flex font-semibold mx-2">
           <p className="text-xl cursor-pointer">Contact Us</p>
         </div>
         <div>
-          <PhCircleWavyQuestion className="flex md:hidden cursor-pointer text-3xl" />
+          <PhCircleWavyQuestion className="flex md:hidden cursor-pointer text-3xl mx-2" />
         </div>
       </div>
     </nav>
