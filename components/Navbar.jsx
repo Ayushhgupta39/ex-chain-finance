@@ -23,19 +23,29 @@ const Navbar = () => {
           className="cursor-pointer mx-2"
         />
       </Link>
-      <Link
-        className={`${pathname === "/support" ? "hidden" : ""}`}
-        href={"/support"}
-      >
-        <div>
-          <div className="hidden md:flex font-semibold mx-2">
-            <p className="text-xl cursor-pointer">Contact Us</p>
-          </div>
-          <div>
-            <PhCircleWavyQuestion className="flex md:hidden cursor-pointer text-3xl mx-2" />
-          </div>
+      <div className="flex items-center gap-2">
+        <div className={`${pathname === "/exchange" ? "hidden" : ""}`}>
+          <Link href={"/exchange"}>
+            <button className="bg-white text-black p-2 px-3 rounded-2xl text-xl font-medium">
+              Exchange
+            </button>
+          </Link>
         </div>
-      </Link>
+        <div className={`${pathname === "/support" ? "hidden" : ""}`}>
+          <Link href={"/support"}>
+            <div
+              className={`${
+                pathname === "/support" ? "hidden" : ""
+              } hidden md:flex font-semibold mx-2`}
+            >
+              <p className="text-xl cursor-pointer">Contact Us</p>
+            </div>
+            <div>
+              <PhCircleWavyQuestion className="flex md:hidden cursor-pointer text-3xl mx-2" />
+            </div>
+          </Link>
+        </div>
+      </div>
     </nav>
   );
 };

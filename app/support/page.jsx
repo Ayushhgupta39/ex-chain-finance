@@ -26,8 +26,8 @@ const page = () => {
           setShowToast(true);
           setTimeout(() => {
             setShowToast(false);
-          }, 3000); // Show toast for 3 seconds
-          form.current.reset(); // Clear the form
+          }, 3000); 
+          form.current.reset();
         },
         function (error) {
           console.log("FAILED...", error);
