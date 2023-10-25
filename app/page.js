@@ -1,22 +1,9 @@
-"use client";
+import React from 'react'
 
-import { LoadingIndicator } from "@/components/widget/LoadingIndicator";
-import dynamic from "next/dynamic";
-
-export const LiFiWidgetNext = dynamic(
-  () => import("../components/widget/Widget").then((module) => module.Widget),
-  {
-    ssr: false,
-    loading: () => <LoadingIndicator />,
-  }
-);
-
-const Home = () => {
+const page = () => {
   return (
-    <div className="flex min-h-[120vh] w-full swap-background justify-center items-start">
-      <LiFiWidgetNext />
-    </div>
-  );
-};
+    <div>Page</div>
+  )
+}
 
-export default Home;
+export default page
