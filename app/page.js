@@ -1,4 +1,3 @@
-import { Contact, Features, Footer, Hero, Prices } from "@/sections";
 import React from "react";
 import {
   BiGithub,
@@ -12,14 +11,14 @@ import Link from "next/link";
 const page = () => {
   return (
     <div className="swap-background font-montserrat min-h-screen w-full flex flex-col text-white">
-       <section className="w-full hero-section grid flex-col justify-center items-center">
-        <div className="flex flex-col h-full justify-center items-end">
+      <section className="w-full hero-section flex flex-col sm:grid grid-cols-2 justify-center items-center">
+        <div className="flex flex-col h-full justify-center items-center sm:items-end">
           <div className="flex flex-col my-4 w-[80%]">
             <small className="text-[#00FFAB]">Powered by LI.FI</small>
-            <h1 className="text-7xl font-bold">ex-chain</h1>
+            <h1 className="text-5xl sm:text-7xl font-bold">ex-chain</h1>
           </div>
           <div className="w-[80%] mb-4">
-            <p className="text-xl text-gray-400 font-medium">
+            <p className="text-base sm:text-xl text-gray-300 font-medium">
               Discover the future of digital finance with, your premier
               destination for effortless and secure cryptocurrency exchanges.
             </p>
@@ -32,7 +31,7 @@ const page = () => {
             </Link>
           </div>
         </div>
-        <div className="flex justify-center items-center">
+        <div className="hidden sm:flex sm:mt-9 justify-center items-center">
           <Image
             src={"/assets/images/widget.png"}
             height={350}
@@ -41,7 +40,7 @@ const page = () => {
           />
         </div>
       </section>
-      <section className="flex flex-col my-9 py-6">
+      <section className="flex flex-col my-4 sm:my-9 py-6">
         <div className="flex w-full justify-center">
           <h2 className="text-4xl font-extrabold my-4">why ex-chain?</h2>
         </div>
@@ -56,7 +55,7 @@ const page = () => {
               />
             </div>
             <h3 className="text-2xl font-semibold m-2">Instant Swaps</h3>
-            <p className="text-slate-400 m-2">
+            <p className="text-gray-300 m-2">
               Swiftly exchange your cryptocurrencies with the lightning-fast
               swap feature, providing you with the best market rates in
               real-time.
@@ -72,7 +71,7 @@ const page = () => {
               />
             </div>
             <h3 className="text-2xl font-semibold m-2"> Cross-Chain Bridge</h3>
-            <p className="text-slate-400 m-2">
+            <p className="text-gray-300 m-2">
               Seamlessly bridge assets between different blockchain networks,
               eliminating barriers and opening up new possibilities for your
               investments.
@@ -90,7 +89,7 @@ const page = () => {
             <h3 className="text-2xl font-semibold m-2">
               User-Friendly Interface
             </h3>
-            <p className="text-slate-400 m-2">
+            <p className="text-gray-300 m-2">
               Our intuitive interface is designed for simplicity, making crypto
               trading accessible for everyone, regardless of their experience
               level.
@@ -99,18 +98,19 @@ const page = () => {
         </div>
       </section>
       <section>
-        <div className="flex w-full">
+        <div className="flex flex-col-reverse sm:flex-row w-full">
           <div className="p-2 m-3">
             <Image
               src={"/assets/images/prices.png"}
               height={500}
               width={500}
               alt="prices_image"
+              className="shadow-lg"
             />
           </div>
-          <div className="flex flex-col justify-center p-2 m-3 w-1/2 gap-4">
+          <div className="flex flex-col text-center sm:text-left justify-center p-2 m-3 sm:m-3 sm:w-1/2 gap-4">
             <h2 className="text-4xl font-bold">Choose what is best for you</h2>
-            <p className="text-xl text-gray-300">
+            <p className="text-base sm:text-xl text-gray-300">
               we put the power in your hands. Navigate the fluctuating market
               with confidence by selecting the best prices tailored to your
               preferences. Your journey, your prices - at ex-chain,
@@ -119,10 +119,10 @@ const page = () => {
           </div>
         </div>
       </section>
-      <section className="flex items-center justify-center flex-col my-9 py-6">
+      <section className="flex items-center justify-center flex-col my-4 sm:my-9 py-6">
         <h2 className="text-4xl font-extrabold my-4">Have any queries?</h2>
         <div className="flex justify-center w-[80%] p-2 m-2">
-          <p className="text-xl text-gray-400 font-medium text-center">
+          <p className="text-base esm:text-xl text-gray-300 sm:font-medium text-center">
             Got questions or need assistance? Our dedicated support team is here
             to help you 24/7. Feel free to reach out to us. Your inquiries are
             important to us, and we're always ready to provide expert guidance
@@ -136,14 +136,14 @@ const page = () => {
         </Link>
       </section>
       <footer className="bg-black flex flex-col sm:flex-row w-full p-6">
-        <div className="w-1/2 p-3 px-4 ml-4 m-3">
-          <p className="text-slate-200">
-            As the sole developer of ex-chain, I'm thrilled to have you on board! For
-            any other queries, or just a friendly chat, you can reach me out on
-            my social handles. Let's stay connected!
+        <div className="sm:w-1/2 p-3 px-4 ml-4 m-3 my-4 sm:my-0">
+          <p className="text-slate-200 text-center sm:text-left">
+            As the sole developer of ex-chain, I'm thrilled to have you on
+            board! For any other queries, or just a friendly chat, you can reach
+            me out on my social handles. Let's stay connected!
           </p>
         </div>
-        <div className="flex justify-center gap-12 w-1/2 items-center text-2xl">
+        <div className="flex justify-center gap-12 sm:w-1/2 items-center text-xl sm:text-2xl">
           <a
             className="hover:text-gray-300 transition duration-75"
             href="https://twitter.com/0xAyushhh"
