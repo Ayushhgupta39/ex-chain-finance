@@ -52,6 +52,7 @@ const page = () => {
                 src={"/assets/images/swap-circle.png"}
                 height={50}
                 width={50}
+                alt="swap_image"
               />
             </div>
             <h3 className="text-2xl font-semibold m-2">Instant Swaps</h3>
@@ -67,6 +68,7 @@ const page = () => {
                 src={"/assets/images/swap-bold.png"}
                 height={50}
                 width={50}
+                alt="bridge_image"
               />
             </div>
             <h3 className="text-2xl font-semibold m-2"> Cross-Chain Bridge</h3>
@@ -82,6 +84,7 @@ const page = () => {
                 src={"/assets/images/user-heart.png"}
                 height={50}
                 width={50}
+                alt="user_image"
               />
             </div>
             <h3 className="text-2xl font-semibold m-2">
