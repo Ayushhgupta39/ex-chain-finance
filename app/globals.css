@@ -38,3 +38,11 @@
   filter: blur("40px");
   -webkit-filter: blur("40px");
 }
+
+.hero-section {
+  grid-template-columns: 50% 50%;
+}
+
+.features_card {
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}

@@ -12,7 +12,7 @@ const Navbar = () => {
     <nav
       className={`w-full text-white ${
         pathname === "/support" ? "bg-slate-950" : "bg-navbar"
-      } flex justify-between p-2 items-center transition-transform duration-200`}
+      } flex font-montserrat justify-between p-2 items-center transition-transform duration-200`}
     >
       <Link href={"/"}>
         <Image
@@ -26,7 +26,7 @@ const Navbar = () => {
       <div className="flex items-center gap-2">
         <div className={`${pathname === "/exchange" ? "hidden" : ""}`}>
           <Link href={"/exchange"}>
-            <button className="bg-white text-black p-2 px-3 rounded-2xl text-xl font-medium">
+            <button className="bg-white text-black p-2 px-3 rounded-2xl text-base font-medium">
               Exchange
             </button>
           </Link>
@@ -38,7 +38,7 @@ const Navbar = () => {
                 pathname === "/support" ? "hidden" : ""
               } hidden md:flex font-semibold mx-2`}
             >
-              <p className="text-xl cursor-pointer">Contact Us</p>
+              <p className="text-base cursor-pointer">Contact Us</p>
             </div>
             <div>
               <PhCircleWavyQuestion className="flex md:hidden cursor-pointer text-3xl mx-2" />
