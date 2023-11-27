@@ -13,7 +13,7 @@ export const LiFiWidgetNext = dynamic(
 
 const Home = () => {
   return (
-    <div className="flex min-h-[120vh] sm:w-full swap-background justify-center items-start">
+    <div className="flex min-h-[150vh] sm:w-full swap-background justify-center items-start">
       <LiFiWidgetNext />
     </div>
   );
