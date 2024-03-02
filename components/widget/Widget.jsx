@@ -26,7 +26,7 @@ export const Widget = () => {
         hiddenUI: ['appearance'],
       }}
       integrator="exchain"
-      fee={0.03}
+      fee={0.015}
     />
   );
 };
